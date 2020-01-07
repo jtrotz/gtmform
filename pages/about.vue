@@ -1,33 +1,16 @@
 <template>
   <section class="container">
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        gtmform
-      </h1>
-      <h2 class="subtitle">
-        Form for new F5 GTM Apps
-      </h2>
-      <div class="links">
-        <a
-          href="/about"
-          target="_blank"
-          class="button--green">Get Started</a>
-        <a
-          href="https://github.com/jtrotz/gtmform"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
-    </div>
   </section>
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
-
 export default {
   components: {
-    AppLogo
+  },
+  data: function ()  {
+      return {
+        myVersion:            '1.0.2',      // Current App version
+      }
   }
 }
 </script>
@@ -39,6 +22,12 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: rgba(0,255,0,0.1);
+  background-image: url("burn.jpg");
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 .title {
