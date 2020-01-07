@@ -1,0 +1,10 @@
+#!/bin/bash
+
+sudo chown -R www-data.neteng /www/portal.nts.jhu.edu/gtmform/
+rm -rf /www/portal.nts.jhu.edu/gtmform/*
+cd dist
+cp -r * /www/portal.nts.jhu.edu/gtmform/
+sudo chown -R www-data.neteng /www/portal.nts.jhu.edu/gtmform/
+sudo chmod -R g+w /www/portal.nts.jhu.edu/gtmform/
+cd ..
+sudo systemctl restart nginx

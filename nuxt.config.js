@@ -3,7 +3,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'gtmform',
+    title: 'gtmform xxx',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -30,6 +30,11 @@ module.exports = {
     inline: true,
     stats: "none"
   },
+
+  router: {
+    base: '/gtmform/'
+  },
+
   /*
   ** Build configuration
   */

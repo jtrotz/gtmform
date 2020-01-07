@@ -10,7 +10,7 @@
       </h2>
       <div class="links">
         <a
-          href="/about"
+          href="about"
           target="_blank"
           class="button--green">Get Started</a>
         <a
