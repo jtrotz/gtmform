@@ -18,6 +18,19 @@ module.exports = {
   */
   loading: { color: '#3B8070' },
   /*
+   * Dev Server Parameters
+   */
+  server: {
+    hot: true,
+    historyApiFallback: true,
+    host: "0.0.0.0",
+    port: 8080,
+    disableHostCheck: true,
+    compress: false,
+    inline: true,
+    stats: "none"
+  },
+  /*
   ** Build configuration
   */
   build: {
